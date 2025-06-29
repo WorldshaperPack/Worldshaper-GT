@@ -1078,8 +1078,8 @@ public class GTMachines {
 
     public static void init() {
         GTMultiMachines.init();
-        GCYMMachines.init();
-        GTResearchMachines.init();
+//        GCYMMachines.init();
+//        GTResearchMachines.init();
 
         if (GTCEu.Mods.isAE2Loaded()) {
             GTAEMachines.init();
