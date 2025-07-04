@@ -251,14 +251,14 @@ public class GTBlocks {
         builder.put(GTMaterials.Polytetrafluoroethylene, CASING_PTFE_INERT);
         builder.put(GTMaterials.HSSE, CASING_HSSE_STURDY);
         // GCYM
-        builder.put(GTMaterials.HSLASteel, CASING_NONCONDUCTING);
-        builder.put(GTMaterials.IncoloyMA956, CASING_VIBRATION_SAFE);
-        builder.put(GTMaterials.WatertightSteel, CASING_WATERTIGHT);
-        builder.put(GTMaterials.Zeron100, CASING_SECURE_MACERATION);
-        builder.put(GTMaterials.TungstenCarbide, CASING_HIGH_TEMPERATURE_SMELTING);
-        builder.put(GTMaterials.TitaniumTungstenCarbide, CASING_LASER_SAFE_ENGRAVING);
-        builder.put(GTMaterials.Stellite100, CASING_LARGE_SCALE_ASSEMBLING);
-        builder.put(GTMaterials.HastelloyC276, CASING_SHOCK_PROOF);
+//        builder.put(GTMaterials.HSLASteel, CASING_NONCONDUCTING);
+//        builder.put(GTMaterials.IncoloyMA956, CASING_VIBRATION_SAFE);
+//        builder.put(GTMaterials.WatertightSteel, CASING_WATERTIGHT);
+//        builder.put(GTMaterials.Zeron100, CASING_SECURE_MACERATION);
+//        builder.put(GTMaterials.TungstenCarbide, CASING_HIGH_TEMPERATURE_SMELTING);
+//        builder.put(GTMaterials.TitaniumTungstenCarbide, CASING_LASER_SAFE_ENGRAVING);
+//        builder.put(GTMaterials.Stellite100, CASING_LARGE_SCALE_ASSEMBLING);
+//        builder.put(GTMaterials.HastelloyC276, CASING_SHOCK_PROOF);
 
         MaterialCasingCollectionEvent event = new MaterialCasingCollectionEvent(builder);
         AddonFinder.getAddons().forEach(addon -> addon.collectMaterialCasings(event));
