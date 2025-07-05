@@ -56,25 +56,25 @@ public class CraftingRecipeLoader {
         VanillaRecipeHelper.addShapelessRecipe(provider, "programmed_circuit", PROGRAMMED_CIRCUIT.asStack(),
                 CustomTags.LV_CIRCUITS);
 
-        VanillaRecipeHelper.addShapedRecipe(provider, "item_filter", ITEM_FILTER.asStack(), "XXX", "XYX", "XXX", 'X',
-                new MaterialEntry(foil, Zinc), 'Y', new MaterialEntry(plate, Steel));
-        VanillaRecipeHelper.addShapedRecipe(provider, "fluid_filter_lapis", FLUID_FILTER.asStack(), "XXX", "XYX", "XXX",
-                'X', new MaterialEntry(foil, Zinc), 'Y', new MaterialEntry(plate, Lapis));
-        VanillaRecipeHelper.addShapedRecipe(provider, "fluid_filter_lazurite", FLUID_FILTER.asStack(), "XXX", "XYX",
-                "XXX", 'X', new MaterialEntry(foil, Zinc), 'Y', new MaterialEntry(plate, Lazurite));
-        VanillaRecipeHelper.addShapedRecipe(provider, "fluid_filter_sodalite", FLUID_FILTER.asStack(), "XXX", "XYX",
-                "XXX", 'X', new MaterialEntry(foil, Zinc), 'Y', new MaterialEntry(plate, Sodalite));
+//        VanillaRecipeHelper.addShapedRecipe(provider, "item_filter", ITEM_FILTER.asStack(), "XXX", "XYX", "XXX", 'X',
+//                new MaterialEntry(foil, Zinc), 'Y', new MaterialEntry(plate, Steel));
+//        VanillaRecipeHelper.addShapedRecipe(provider, "fluid_filter_lapis", FLUID_FILTER.asStack(), "XXX", "XYX", "XXX",
+//                'X', new MaterialEntry(foil, Zinc), 'Y', new MaterialEntry(plate, Lapis));
+//        VanillaRecipeHelper.addShapedRecipe(provider, "fluid_filter_lazurite", FLUID_FILTER.asStack(), "XXX", "XYX",
+//                "XXX", 'X', new MaterialEntry(foil, Zinc), 'Y', new MaterialEntry(plate, Lazurite));
+//        VanillaRecipeHelper.addShapedRecipe(provider, "fluid_filter_sodalite", FLUID_FILTER.asStack(), "XXX", "XYX",
+//                "XXX", 'X', new MaterialEntry(foil, Zinc), 'Y', new MaterialEntry(plate, Sodalite));
 
-        VanillaRecipeHelper.addShapedRecipe(provider, "tag_filter_olivine", TAG_FILTER.asStack(),
-                "XXX", "XYX", "XXX", 'X', new MaterialEntry(foil, Zinc), 'Y', new MaterialEntry(plate, Olivine));
-        VanillaRecipeHelper.addShapedRecipe(provider, "tag_filter_emerald", TAG_FILTER.asStack(),
-                "XXX", "XYX", "XXX", 'X', new MaterialEntry(foil, Zinc), 'Y', new MaterialEntry(plate, Emerald));
-        VanillaRecipeHelper.addShapedRecipe(provider, "fluid_tag_filter", TAG_FLUID_FILTER.asStack(),
-                "XXX", "XYX", "XXX", 'X', new MaterialEntry(foil, Zinc), 'Y', new MaterialEntry(plate, Amethyst));
+//        VanillaRecipeHelper.addShapedRecipe(provider, "tag_filter_olivine", TAG_FILTER.asStack(),
+//                "XXX", "XYX", "XXX", 'X', new MaterialEntry(foil, Zinc), 'Y', new MaterialEntry(plate, Olivine));
+//        VanillaRecipeHelper.addShapedRecipe(provider, "tag_filter_emerald", TAG_FILTER.asStack(),
+//                "XXX", "XYX", "XXX", 'X', new MaterialEntry(foil, Zinc), 'Y', new MaterialEntry(plate, Emerald));
+//        VanillaRecipeHelper.addShapedRecipe(provider, "fluid_tag_filter", TAG_FLUID_FILTER.asStack(),
+//                "XXX", "XYX", "XXX", 'X', new MaterialEntry(foil, Zinc), 'Y', new MaterialEntry(plate, Amethyst));
 
-        VanillaRecipeHelper.addShapedRecipe(provider, "item_smart_filter_olivine", SMART_ITEM_FILTER.asStack(), "XEX",
-                "XCX", "XEX", 'X', new MaterialEntry(foil, Zinc), 'C', CustomTags.LV_CIRCUITS, 'E',
-                new MaterialEntry(plate, Ruby));
+//        VanillaRecipeHelper.addShapedRecipe(provider, "item_smart_filter_olivine", SMART_ITEM_FILTER.asStack(), "XEX",
+//                "XCX", "XEX", 'X', new MaterialEntry(foil, Zinc), 'C', CustomTags.LV_CIRCUITS, 'E',
+//                new MaterialEntry(plate, Ruby));
 
         VanillaRecipeHelper.addShapedRecipe(provider, "plank_to_wooden_shape", WOODEN_FORM_EMPTY.asStack(), "   ",
                 " X ", "s  ", 'X', ItemTags.PLANKS);
