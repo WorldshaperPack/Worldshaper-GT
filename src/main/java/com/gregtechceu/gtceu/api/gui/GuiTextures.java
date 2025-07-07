@@ -107,6 +107,8 @@ public class GuiTextures {
             "gtceu:textures/gui/widget/button_distinct_buses.png");
     public static final ResourceTexture BUTTON_POWER = new ResourceTexture(
             "gtceu:textures/gui/widget/button_power.png");
+    public static final ResourceTexture BUTTON_BATCH = new ResourceTexture(
+            "gtceu:textures/gui/widget/button_batch.png");
     public static final ResourceTexture BUTTON_FILTER_NBT = new ResourceTexture(
             "gtceu:textures/gui/widget/button_filter_nbt.png");
     public static final ResourceTexture BUTTON_FLUID_OUTPUT = new ResourceTexture(
@@ -189,7 +191,7 @@ public class GuiTextures {
     public static final ResourceTexture MAINTENANCE_ICON = new ResourceTexture(
             "gtceu:textures/block/overlay/machine/overlay_maintenance.png");
     public static final ResourceTexture STORAGE_ICON = new ResourceTexture(
-            "gtceu:textures/item/storage_cover.png");
+            "gtceu:textures/item/storage.png");
     public static final ResourceTexture BUTTON_MINER_MODES = new ResourceTexture(
             "gtceu:textures/gui/widget/button_miner_modes.png");
 

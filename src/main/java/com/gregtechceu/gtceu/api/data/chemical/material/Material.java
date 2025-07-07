@@ -83,6 +83,13 @@ public class Material implements Comparable<Material> {
      */
     private String chemicalFormula;
 
+    /**
+     * Material specific tags
+     */
+    @Setter
+    @Getter
+    private List<TagKey<Item>> itemTags = new ArrayList<>();
+
     private String calculateChemicalFormula() {
         if (chemicalFormula != null) return this.chemicalFormula;
         if (materialInfo.element != null) {
@@ -360,9 +367,9 @@ public class Material implements Comparable<Material> {
     }
 
     public int getLayerARGB(int layerIndex) {
-        // get 2nd digit as positive if emissive layer
+        // parse emissive layer value as -(layer + 101)
         if (layerIndex < -100) {
-            layerIndex = (Math.abs(layerIndex) % 100) / 10;
+            layerIndex = -layerIndex - 101;
         }
         if (layerIndex > materialInfo.colors.size() - 1 || layerIndex < 0) return -1;
         int layerColor = getMaterialARGB(layerIndex);
@@ -551,6 +558,8 @@ public class Material implements Comparable<Material> {
         private final MaterialFlags flags;
         private Set<TagPrefix> ignoredTagPrefixes = null;
 
+        private final List<TagKey<Item>> itemTags = new ArrayList<>();
+
         private String formula = null;
 
         /*
@@ -580,6 +589,11 @@ public class Material implements Comparable<Material> {
             materialInfo = new MaterialInfo(resourceLocation);
             properties = new MaterialProperties();
             flags = new MaterialFlags();
+        }
+
+        public Builder customTags(TagKey<Item> key) {
+            this.itemTags.add(key);
+            return this;
         }
 
         /*
@@ -1282,6 +1296,9 @@ public class Material implements Comparable<Material> {
             }
 
             var mat = new Material(materialInfo, properties, flags);
+            if (!itemTags.isEmpty()) {
+                mat.setItemTags(itemTags);
+            }
             if (formula != null) {
                 mat.setFormula(formula);
             }

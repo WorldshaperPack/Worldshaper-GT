@@ -19,9 +19,8 @@ import net.minecraftforge.server.ServerLifecycleHooks;
 
 import dev.emi.emi.config.EmiConfig;
 import me.shedaniel.rei.api.client.REIRuntime;
-import org.apache.logging.log4j.util.Strings;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.nio.file.Path;
 
@@ -31,7 +30,7 @@ public class GTCEu {
     public static final String MOD_ID = "gtceu";
     private static final ResourceLocation TEMPLATE_LOCATION = new ResourceLocation(MOD_ID, "");
     public static final String NAME = "GregTechCEu";
-    public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
+    public static final Logger LOGGER = LogManager.getLogger(NAME);
 
     public GTCEu() {
         GTCEu.init();
@@ -44,7 +43,7 @@ public class GTCEu {
     }
 
     public static ResourceLocation id(String path) {
-        if (Strings.isBlank(path)) {
+        if (path.isBlank()) {
             return TEMPLATE_LOCATION;
         }
 
@@ -120,7 +119,10 @@ public class GTCEu {
     }
 
     /**
-     * @return if the FML environment is a client
+     * @return if the game is the <strong>PHYSICAL</strong> client, e.g. not a dedicated server.
+     * @apiNote Do not use this to check if you're currently on the server thread for side-specific actions!
+     *          It does <strong>NOT</strong> work for that. Use {@link #isClientThread()} instead.
+     * @see #isClientThread()
      */
     public static boolean isClientSide() {
         return FMLEnvironment.dist.isClient();
@@ -210,6 +212,10 @@ public class GTCEu {
 
         public static boolean isGameStagesLoaded() {
             return isModLoaded(GTValues.MODID_GAMESTAGES);
+        }
+
+        public static boolean isCCTweakedLoaded() {
+            return isModLoaded(GTValues.MODID_CCTWEAKED);
         }
     }
 }
