@@ -10,6 +10,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.BakedModelWrapper;
+import net.minecraftforge.client.model.IQuadTransformer;
 import net.minecraftforge.client.model.data.ModelData;
 
 import lombok.Getter;
@@ -19,6 +20,8 @@ import org.jetbrains.annotations.Nullable;
 import java.util.*;
 
 public class TextureOverrideModel<T extends BakedModel> extends BakedModelWrapper<T> {
+
+    public static final IQuadTransformer OVERLAY_OFFSET = GTQuadTransformers.offset(0.002f);
 
     @NotNull
     @Getter
