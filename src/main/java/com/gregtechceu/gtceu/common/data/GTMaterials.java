@@ -990,16 +990,16 @@ public class GTMaterials {
     /**
      * GCYM Materials
      */
-    public static Material TantalumCarbide;
-    public static Material HSLASteel;
-    public static Material MolybdenumDisilicide;
-    public static Material Zeron100;
-    public static Material WatertightSteel;
-    public static Material IncoloyMA956;
-    public static Material MaragingSteel300;
-    public static Material HastelloyX;
-    public static Material Stellite100;
-    public static Material TitaniumCarbide;
-    public static Material TitaniumTungstenCarbide;
-    public static Material HastelloyC276;
+//    public static Material TantalumCarbide;
+//    public static Material HSLASteel;
+//    public static Material MolybdenumDisilicide;
+//    public static Material Zeron100;
+//    public static Material WatertightSteel;
+//    public static Material IncoloyMA956;
+//    public static Material MaragingSteel300;
+//    public static Material HastelloyX;
+//    public static Material Stellite100;
+//    public static Material TitaniumCarbide;
+//    public static Material TitaniumTungstenCarbide;
+//    public static Material HastelloyC276;
 }
